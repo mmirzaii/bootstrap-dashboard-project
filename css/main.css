@@ -22,7 +22,7 @@ body a {
   background-repeat: no-repeat;
   box-shadow: -5px 7px 25px #999;
 }
-.nav-button{
+.nav-button {
   box-shadow: none !important;
 }
 .bottom-border {
@@ -67,11 +67,27 @@ body a {
   border-bottom: 2px solid #dc3545 !important;
 }
 @media (max-width: 768px) {
-  .top-nav{
-position: static !important;
+  .top-nav {
+    position: static !important;
   }
-  .sidebar{
+  .sidebar {
     position: static !important;
     height: auto !important;
   }
+}
+.modal-box {
+background: rgba(255, 255, 255, 0.39) !important;
+border-radius: 25px !important;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+}
+.header-modal {
+  border: none !important;
+}
+.footer-modal {
+  border: none !important;
+}
+.footer-modal button:focus {
+  box-shadow: none !important;
 }

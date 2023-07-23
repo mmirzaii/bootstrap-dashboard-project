@@ -122,7 +122,10 @@
                       ></a>
                     </li>
                     <li class="nav-item ms-md-auto">
-                      <a href="" class="nav-link"
+                      <a
+                        href="#logoutmodal"
+                        data-bs-toggle="modal"
+                        class="nav-link"
                         ><i class="fas fa-sign-out-alt text-danger"></i
                       ></a>
                     </li>
@@ -136,6 +139,26 @@
       </div>
     </nav>
     <!-- end of navigation -->
+    <!-- modal -->
+    <div class="modal fade" data-bs-backdrop="static" id="logoutmodal">
+      <div class="modal-dialog">
+        <div class="modal-content modal-box">
+          <div class="modal-header header-modal"><h4>آیا میخواهید خارج شوید؟</h4></div>
+          <div class="modal-body">
+            <p class="text-muted">
+              در صورت خروج برای دسترسی به پنل باید مجددا وارد شوید
+            </p>
+          </div>
+          <div class="modal-footer footer-modal">
+            <button class="btn btn-success" data-bs-dismiss="modal">
+              میمانم
+            </button>
+            <button class="btn btn-danger">خارج میشوم</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal -->
   </body>
   <script src="./js/code.jquery.com_jquery-3.7.0.slim.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
