@@ -336,7 +336,93 @@
               </div>
               <!-- end of progress -->
               <!-- tasklist -->
-              <div class="col-lg-6"></div>
+              <div class="col-lg-6">
+                <h4 class="text-muted p-3 mb-3">تسک ها</h4>
+                <!-- task -->
+                <div class="container-fluid bg-white task-border">
+                  <div class="row py-3 mb-4 align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" class="form-check-input" checked />
+                    </div>
+                    <div class="col-9">آماده کردن سمت بک‌اند</div>
+                    <div class="col-1">
+                      <a
+                        href=""
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="ویرایش"
+                        ><i class="fas fa-edit text-success me-2"></i
+                      ></a>
+                    </div>
+                    <div class="col-1">
+                      <a
+                        href=""
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="حذف"
+                        ><i class="fas fa-trash text-danger me-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of task -->
+                <!-- task -->
+                <div class="container-fluid bg-white task-border">
+                  <div class="row py-3 mb-4 align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" class="form-check-input" />
+                    </div>
+                    <div class="col-9">طراحی همه صفحات</div>
+                    <div class="col-1">
+                      <a
+                        href=""
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="ویرایش"
+                        ><i class="fas fa-edit text-success me-2"></i
+                      ></a>
+                    </div>
+                    <div class="col-1">
+                      <a
+                        href=""
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="حذف"
+                        ><i class="fas fa-trash text-danger me-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of task -->
+                <!-- task -->
+                <div class="container-fluid bg-white task-border">
+                  <div class="row py-3 mb-4 align-items-center">
+                    <div class="col-1">
+                      <input type="checkbox" class="form-check-input" checked />
+                    </div>
+                    <div class="col-9">قرار دادن در گیت‌هاب</div>
+                    <div class="col-1">
+                      <a
+                        href=""
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="ویرایش"
+                        ><i class="fas fa-edit text-success me-2"></i
+                      ></a>
+                    </div>
+                    <div class="col-1">
+                      <a
+                        href=""
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="حذف"
+                        ><i class="fas fa-trash text-danger me-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of task -->
+              </div>
               <!-- end of tasklist -->
             </div>
           </div>
@@ -352,4 +438,12 @@
     src="https://kit.fontawesome.com/76fd4495d1.js"
     crossorigin="anonymous"
   ></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+  </script>
 </html>

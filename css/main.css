@@ -9,7 +9,7 @@
   font-size: 20px;
 }
 body {
-  background-color: #eee;
+  background-color: #eee !important;
 }
 body a {
   text-decoration: none;
@@ -97,6 +97,10 @@ body a {
 }
 .footer-card:hover i {
   animation: rotate 2s linear 0.5s 1;
+}
+/* task in tasklist */
+.task-border {
+  border-right: 3px solid #f66436;
 }
 @keyframes rotate {
   from {
