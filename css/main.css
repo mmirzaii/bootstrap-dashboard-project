@@ -1,3 +1,4 @@
+/* main setting  */
 @font-face {
   font-family: araz;
   src: url(../fonts/araz.ttf);
@@ -13,6 +14,7 @@ body {
 body a {
   text-decoration: none;
 }
+/* sidebar  */
 .sidebar {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
@@ -45,6 +47,7 @@ body a {
   background-color: #f66436;
   transform: translateY(-1px);
 }
+/* topnav */
 .search-button {
   padding: 10px 16px !important;
   border-radius: 50% !important;
@@ -66,21 +69,13 @@ body a {
   box-shadow: none !important;
   border-bottom: 2px solid #dc3545 !important;
 }
-@media (max-width: 768px) {
-  .top-nav {
-    position: static !important;
-  }
-  .sidebar {
-    position: static !important;
-    height: auto !important;
-  }
-}
+/* logout modal */
 .modal-box {
-background: rgba(255, 255, 255, 0.39) !important;
-border-radius: 25px !important;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10.6px);
--webkit-backdrop-filter: blur(10.6px);
+  background: rgba(255, 255, 255, 0.39) !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
 }
 .header-modal {
   border: none !important;
@@ -90,4 +85,33 @@ backdrop-filter: blur(10.6px);
 }
 .footer-modal button:focus {
   box-shadow: none !important;
+}
+/* cards */
+.card-common {
+  box-shadow: 1px 2px 5px #999;
+  transition: all 0.4s;
+}
+.card-common:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+.footer-card:hover i {
+  animation: rotate 2s linear 0.5s 1;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .top-nav {
+    position: static !important;
+  }
+  .sidebar {
+    position: static !important;
+    height: auto !important;
+  }
 }
