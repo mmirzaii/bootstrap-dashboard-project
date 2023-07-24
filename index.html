@@ -340,7 +340,7 @@
                 <h4 class="text-muted p-3 mb-3">تسک ها</h4>
                 <!-- task -->
                 <div class="container-fluid bg-white task-border">
-                  <div class="row py-3 mb-4 align-items-center">
+                  <div class="row py-3 mb-3 align-items-center">
                     <div class="col-1">
                       <input type="checkbox" class="form-check-input" checked />
                     </div>
@@ -368,7 +368,7 @@
                 <!-- end of task -->
                 <!-- task -->
                 <div class="container-fluid bg-white task-border">
-                  <div class="row py-3 mb-4 align-items-center">
+                  <div class="row py-3 mb-3 align-items-center">
                     <div class="col-1">
                       <input type="checkbox" class="form-check-input" />
                     </div>
@@ -396,7 +396,7 @@
                 <!-- end of task -->
                 <!-- task -->
                 <div class="container-fluid bg-white task-border">
-                  <div class="row py-3 mb-4 align-items-center">
+                  <div class="row py-3 mb-3 align-items-center">
                     <div class="col-1">
                       <input type="checkbox" class="form-check-input" checked />
                     </div>
@@ -430,6 +430,151 @@
       </div>
     </section>
     <!-- end of progress / tasklist -->
+    <!-- tables -->
+    <section>
+      <div class="container-fluid">
+        <div class="row mb-5">
+          <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+            <div class="row">
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                <h3 class="text-muted text-center mb-3">پرداختی ها</h3>
+                <table class="table table-dark table-hover text-center">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>نام</th>
+                      <th>مبلغ</th>
+                      <th>تاریخ</th>
+                      <th>وضعیت</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>محمد</td>
+                      <td>۲۰ میلیون</td>
+                      <td>۱۷ تیر</td>
+                      <td>
+                        <span class="badge w-75 py-2 bg-success"
+                          >پرداخت شد</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>۲</td>
+                      <td>علی</td>
+                      <td>۷ میلیون</td>
+                      <td>۲۴ شهریور</td>
+                      <td>
+                        <span class="bg-warning badge w-75 py-2">انتظار</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>۳</td>
+                      <td>زهرا</td>
+                      <td>۹ میلیون</td>
+                      <td>۱۶ شهریور</td>
+                      <td>
+                        <span class="badge w-75 py-2 bg-danger">رد شده</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>۴</td>
+                      <td>سینا</td>
+                      <td>۱ میلیون</td>
+                      <td>۱۳ مرداد</td>
+                      <td>
+                        <span class="badge w-75 py-2 bg-success"
+                          >پرداخت شد</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- pagination -->
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a href="" class="page-link py-1 px-3">&laquo;</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="" class="page-link py-1 px-3">۳</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="" class="page-link py-1 px-3">۲</a>
+                  </li>
+                  <li class="page-item active">
+                    <a href="" class="page-link py-1 px-3">۱</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="" class="page-link py-1 px-3">&raquo;</a>
+                  </li>
+                </ul>
+                <!-- end of pagination -->
+              </div>
+              <div class="col-lg-6">
+                <h3 class="text-muted text-center mb-3">تیکت های اخیر</h3>
+                <table class="table table-striped text-center bg-light">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>نام</th>
+                      <th>تاریخ</th>
+                      <th>عملیات</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>۱</td>
+                      <td>محمد</td>
+                      <td>۱۷ تیر</td>
+                      <td><button class="btn btn-info btn-sm">پاسخ</button></td>
+                    </tr>
+                    <tr>
+                      <td>۲</td>
+                      <td>علی</td>
+                      <td>۲۴ شهریور</td>
+                      <td><button class="btn btn-info btn-sm">پاسخ</button></td>
+                    </tr>
+                    <tr>
+                      <td>۳</td>
+                      <td>زهرا</td>
+                      <td>۱۶ شهریور</td>
+                      <td><button class="btn btn-info btn-sm">پاسخ</button></td>
+                    </tr>
+                    <tr>
+                      <td>۴</td>
+                      <td>سینا</td>
+                      <td>۱۳ مرداد</td>
+                      <td><button class="btn btn-info btn-sm">پاسخ</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- pagination -->
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a href="" class="page-link py-1 px-3">&laquo;</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="" class="page-link py-1 px-3">۳</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="" class="page-link py-1 px-3">۲</a>
+                  </li>
+                  <li class="page-item active">
+                    <a href="" class="page-link py-1 px-3">۱</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="" class="page-link py-1 px-3">&raquo;</a>
+                  </li>
+                </ul>
+                <!-- end of pagination -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of tables -->
   </body>
   <script src="./js/code.jquery.com_jquery-3.7.0.slim.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
