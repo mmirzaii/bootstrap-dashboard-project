@@ -102,6 +102,10 @@ body a {
 .task-border {
   border-right: 3px solid #f66436;
 }
+/* card activities */
+.card-activities .card-header button:focus{
+box-shadow: none !important;
+}
 @keyframes rotate {
   from {
     transform: rotate(0deg);
