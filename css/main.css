@@ -14,7 +14,7 @@ body {
     rgba(20, 13, 46, 1) 0%,
     rgba(22, 16, 49, 1) 50%,
     rgba(25, 19, 57, 1) 100%
-  ) !important;
+  );
 }
 body a {
   text-decoration: none;
@@ -55,14 +55,20 @@ body a {
 .top-nav {
   background-color: #2c2457;
 }
+.toggler-navbar {
+  background-color: #463883 !important;
+  color: #fff;
+}
 .search-button {
   padding: 10px 16px !important;
-  transition: all 0.4s !important;
+}
+.search-button:focus {
+  box-shadow: none !important;
 }
 .search-button i {
   color: #453782;
+  transition: all 0.4s;
 }
-
 .search-button:hover i {
   color: #f66436;
 }
@@ -72,7 +78,7 @@ body a {
   border: none !important;
   border-radius: 0px !important;
   border-bottom: 2px solid #463883 !important;
-  transition: all 0.4s;
+  transition: all 0.4s !important;
 }
 .search-input:focus {
   background-color: transparent;
@@ -82,7 +88,7 @@ body a {
 .item-nav a i {
   color: #453782;
 }
-.item-nav-logout a i {
+.item-nav-logout i {
   color: #ff7c65;
 }
 /* logout modal */
@@ -241,17 +247,17 @@ span {
   box-shadow: none !important;
 }
 .pagination-color li:hover a {
-  background-color: #fe6567;
-  color: #222;
+  background-color: #eee;
+  color: #453782;
 }
 .pagination-color li a {
-  background-color: #f7d7a4;
-  color: #444;
+  background-color: #453782;
+  color: #eee;
 }
 .p-active a {
-  background-color: #fe3140 !important;
-  color: #222 !important;
-  border: 1px solid #fe3140 !important;
+  background-color: #eee !important;
+  color: #453782 !important;
+  border: 1px solid #f66436 !important;
 }
 /* card activities */
 .activities-box {

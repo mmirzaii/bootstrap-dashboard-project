@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
   <head>
     <title>Dashboard</title>
     <meta charset="utf-8" />
@@ -18,12 +18,18 @@
     <!-- navigation -->
     <nav class="navbar navbar-expand-md">
       <button
-        class="navbar-toggler mb-2 bg-light nav-button"
+        class="navbar-toggler toggler-navbar m-2 nav-button"
         data-bs-toggle="collapse"
         data-bs-target="#mynav"
       >
         <i class="fas fa-bars"></i>
       </button>
+      <a
+        href="#logoutmodal"
+        data-bs-toggle="modal"
+        class="nav-link item-nav-logout"
+        ><i class="fas fa-sign-out-alt"></i
+      ></a>
       <div class="navbar-collapse collapse" id="mynav">
         <div class="container-fluid">
           <div class="row">
@@ -107,7 +113,7 @@
                   </form>
                 </div>
                 <div class="col-md-5">
-                  <ul class="navbar-nav flex-row justify-content-between">
+                  <ul class="navbar-nav flex-row justify-content-around">
                     <li class="nav-item item-nav">
                       <a href="" class="nav-link"
                         ><i class="fas fa-comments"></i
@@ -118,11 +124,11 @@
                         ><i class="fas fa-bell"></i
                       ></a>
                     </li>
-                    <li class="nav-item ms-md-auto item-nav-logout">
+                    <li class="nav-item ms-md-auto d-md-block d-none">
                       <a
                         href="#logoutmodal"
                         data-bs-toggle="modal"
-                        class="nav-link"
+                        class="nav-link item-nav-logout"
                         ><i class="fas fa-sign-out-alt"></i
                       ></a>
                     </li>
@@ -359,7 +365,7 @@
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
                           title="ویرایش"
-                          ><i class="fas fa-edit me-2"></i
+                          ><i class="fas fa-edit"></i
                         ></a>
                       </div>
                       <div class="col-1">
@@ -369,7 +375,7 @@
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
                           title="حذف"
-                          ><i class="fas fa-trash me-2"></i
+                          ><i class="fas fa-trash"></i
                         ></a>
                       </div>
                     </div>
@@ -394,7 +400,7 @@
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
                           title="ویرایش"
-                          ><i class="fas fa-edit me-2"></i
+                          ><i class="fas fa-edit"></i
                         ></a>
                       </div>
                       <div class="col-1">
@@ -404,7 +410,7 @@
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
                           title="حذف"
-                          ><i class="fas fa-trash me-2"></i
+                          ><i class="fas fa-trash"></i
                         ></a>
                       </div>
                     </div>
@@ -430,7 +436,7 @@
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
                           title="ویرایش"
-                          ><i class="fas fa-edit me-2"></i
+                          ><i class="fas fa-edit"></i
                         ></a>
                       </div>
                       <div class="col-1">
@@ -440,7 +446,7 @@
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
                           title="حذف"
-                          ><i class="fas fa-trash me-2"></i
+                          ><i class="fas fa-trash"></i
                         ></a>
                       </div>
                     </div>
@@ -462,7 +468,7 @@
           <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
             <div class="row">
               <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="table-box text-white p-4 rounded">
+                <div class="table-box table-responsive text-white p-4 rounded">
                   <h3 class="text-center mb-3">پرداختی ها</h3>
                   <table
                     class="table text-light table-hover table-borderless text-center table-pay"
@@ -547,7 +553,9 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="tableticket-box text-white p-4 rounded">
+                <div
+                  class="tableticket-box table-responsive text-white p-4 rounded"
+                >
                   <h3 class="text-white text-center mb-3">تیکت های اخیر</h3>
                   <table
                     class="table table-borderless table-ticket text-light text-center rounded-3 border-0"
@@ -789,7 +797,7 @@
                     </form>
                     <div class="row">
                       <div class="card-group">
-                        <div class="card align-items-center date-card">
+                        <div class="card align-items-center m-1 date-card">
                           <img
                             src="./svg/celender.svg"
                             alt=""
@@ -802,7 +810,7 @@
                             </p>
                           </div>
                         </div>
-                        <div class="card align-items-center date-card">
+                        <div class="card align-items-center m-1 date-card">
                           <img
                             src="./svg/clock.svg"
                             alt=""
@@ -838,9 +846,7 @@
     </footer>
     <!-- end of footer -->
   </body>
-  <script src="./js/code.jquery.com_jquery-3.7.0.slim.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/popper.min.js"></script>
   <script
     src="https://kit.fontawesome.com/76fd4495d1.js"
     crossorigin="anonymous"
